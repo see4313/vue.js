@@ -38,7 +38,7 @@ export default {
 </style> -->
 
 <!-- if는 dom에서 아에 지워졌다가 다시 생기는것-->
-<!-- show는 html로 따지면 그냥 접었다가 펼치는것 ( 숨김 보기 정도 ? )-->
+<!-- show는 html로 따지면 그냥 접었다가 펼치는것 ( 숨김 보기 정도 ? 흠흠 지피티 첵오)-->
 <template>
   <div id="app">
     <h2>v-if vs v-show 차이점 보기</h2>
