@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
-import DataBinding from "../views/DataBinding.vue";
+// import DataBinding from "../views/DataBinding.vue";
+// import DataBinding from "../views/DataBindingAttr.vue";
+import DataBinding from "../views/DataBindingList.vue";
 
 const routes = [
   {

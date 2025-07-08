@@ -5,6 +5,7 @@
     <router-link to="/about">About</router-link>
     <router-link to="/data">Data link</router-link>
   </nav>
+
   <!--보여줘야할 url 위치-->
   <router-view />
 </template>
