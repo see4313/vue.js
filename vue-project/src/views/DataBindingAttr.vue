@@ -63,7 +63,8 @@ export default {
     },
   },
 
-  // mounted 메소드를 사용하면 훅
+  // mounted 메소드를 사용하면 훅이 발생
+  //Vue 컴포넌트가 화면에 그려지고 난 직후에 실행되는 함수
   mounted() {
     console.log(this);
     this.msg = "길동홍";
