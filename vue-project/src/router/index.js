@@ -5,7 +5,16 @@ import HomeView from "../views/HomeView.vue";
 // import DataBinding from "../views/DataBindingAttr.vue";
 // import DataBinding from "../views/DataBindingList.vue";
 // import DataBinding from "../views/EventClick.vue";
-import DataBinding from "../views/ShowVue.vue";
+// import DataBinding from "../views/ShowVue.vue";
+// import DataBinding from "../views/ComputedView.vue";
+// import DataBinding from "../views/WatchView.vue";
+// import DataBinding from "../views/TodoView.vue";
+
+// import DataBinding from "../views/TodoView2.vue"; // 교수님 깃
+
+// import DataBinding from "../views/NestedComponent.vue";
+// import DataBinding from "../views/ParentComponent.vue";
+import DataBinding from "../views/ParentComponent1.vue";
 
 const routes = [
   {

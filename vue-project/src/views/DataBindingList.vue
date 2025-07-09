@@ -15,7 +15,7 @@
         </tr>
       </thead>
       <tbody>
-        <!--반복되어야하는곳에 v-for(반복문) 사용 , i는 index를 말한다 (중복되지 않을 값을 key로 만들어줘야됨 ex)id도 가능 )-->
+        <!--반복되어야하는곳에 v-for(반복문) 사용 , i는 index를 말한다 (중복되지 않을 값을 key로 만들어줘야됨 ex)id도 가능 , key, id가 없으면 오류!)-->
         <tr v-bind:key="i" v-for="(product, i) in productList">
           <td>{{ product.product_name }}</td>
           <td>{{ product.price }}</td>

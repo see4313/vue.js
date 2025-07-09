@@ -8,7 +8,18 @@
 
   <!--보여줘야할 url 위치-->
   <router-view />
+  <p>App.vue : {{ msg }}</p>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      msg: "",
+    };
+  },
+};
+</script>
 
 <style>
 #app {
