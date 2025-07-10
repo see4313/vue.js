@@ -10,11 +10,14 @@ import HomeView from "../views/HomeView.vue";
 // import DataBinding from "../views/WatchView.vue";
 // import DataBinding from "../views/TodoView.vue";
 
-import DataBinding from "../views/TodoView2.vue"; // 교수님 깃
+// import DataBinding from "../views/TodoView2.vue"; // 교수님 깃
 
 // import DataBinding from "../views/NestedComponent.vue";
 // import DataBinding from "../views/ParentComponent.vue";
 // import DataBinding from "../views/ParentComponent1.vue";
+// import DataBinding from "../views/child/GrandChildComponent.vue";
+
+import DataBinding from "../views/TodoListVuex.vue";
 
 const routes = [
   {

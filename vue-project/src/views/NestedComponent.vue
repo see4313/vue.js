@@ -15,6 +15,7 @@
 <script>
 import PageTitle from "../components/PageTitle.vue";
 export default {
+  //components 사용해서 하위컴포넌트 임포트해서 사용함
   components: {
     PageTitle,
   },

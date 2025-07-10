@@ -2,6 +2,7 @@
   <h3>부모컴포넌트(ParentComponent.vue)</h3>
   <p class="parent-component">{{ msg }}</p>
   <!--v-on:send-message 사용자가 임의로 지정한 이벤트 -->
+  <!--childcomponent에서 방출해준걸 받음-->
   <ChildComponent v-on:send-message="sendMessage" />
 </template>
 
