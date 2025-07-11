@@ -11,6 +11,8 @@ import store from "./store/index.js"; // 저장소
 // mount = Vue 컴포넌트를 화면에 띄우는 일
 // mounted() = 화면에 뜬 직후 Vue가 자동으로 불러주는 이벤트 콜백 함수
 
+
+// createApp(App).use(router).mount("#app"); // 밑에 
 const app = createApp(App);
 app.use(router);
 app.use(store);
