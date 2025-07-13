@@ -71,12 +71,13 @@ export default {
   data() {
     return {
       productList: [],
+      productDelete: {},
     };
   },
   methods: {
     //상품목록메소드
     async getProductList() {
-      this.productList = await this.$api("/api/productList2", {});
+      this.productList = await this.$api("/api/productList2", {}); //mixin 사용
     },
     //상품등록메소드
     goToInsert() {
@@ -86,21 +87,23 @@ export default {
     goToImageInsert(product_id) {
       this.$router.push({
         name: "imageInsert",
-        query: { product_id: product_id },
+        query: { product_id: product_id }, // mixin을 사용 안한방법
       });
     },
     //상품수정메소드
     goToUpdate() {
       //
     },
-    //상품삭제메소드(숙)
-    // deleteProduct(product_id) {
-    //   //
-    //   this.$router.push({
-    //     name: "productDelete"
-    //     query: {}
-    //   })
-    // },
+    //상품삭제메소드
+    async deleteProduct(product_id) {
+      await this.$api("/api/plusImageDelete", {
+        param: [product_id],
+      });
+      await this.$api("/api/productDelete", {
+        param: [product_id],
+      });
+      this.getProductList();
+    },
   },
   mounted() {
     this.getProductList();
